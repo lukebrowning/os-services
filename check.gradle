@@ -1,0 +1,7 @@
+task check (type : Exec) {
+    print 'Check task on os-services:'
+    workingDir '.'
+    // Run the default tox environment.
+    executable = "tox"
+    args "-r"
+}
